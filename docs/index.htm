@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta property="og:title" content="TUNIC Randomizer">   
+    <meta property="og:description" content="An extensive randomizer mod for TUNIC.">
+    <meta property="og:type" content="website">
+    
+    <title>TUNIC Randomizer</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script>
+        $(function(){ 
+            $("a.external, a[href$='.pdf']").click(function(e){
+                window.open(this.href);
+                e.preventDefault();
+            });
+        });
+    </script>
+</head>
+<body>
+    <a href="#content" class="sr-only sr-only-focusable">Skip to Main Content</a>
+    
+    <header class="py-2 sticky-top bg-dark shadow">
+        <div class="container">
+            <nav class="navbar navbar-expand-md">
+                <div class="container-fluid">
+                    <a class="navbar-brand fs-4" href="index.htm">🦊 TUNIC Randomizer</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="main-nav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#modes" class="nav-link">Modes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#logic" class="nav-link">Logic</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#settings" class="nav-link">Settings</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#hints" class="nav-link">Hints</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#links" class="nav-link">Links</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="px-4 pt-5 text-center border-bottom" style="background-image: url('assets/categories.jpg'); background-size: cover; background-repeat: no-repeat;">
+        <div class="my-2 text-center">
+            <img class="d-block mx-auto mb-4" src="assets/tunc.png" alt="" width="150" height="150">
+        </div>
+        <h1 class="display-4 fw-bold text-white">
+            TUNIC Randomizer
+        </h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4 text-white">
+                An extensive randomizer mod for TUNIC, an action-adventure game about a tiny fox in a big world. Featuring randomization of every item in the game, as well as enemy randomization, enhanced fox customization, custom items, and much, much more!
+            </p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                <a href="https://tunicgame.com/" class="btn btn-primary btn-lg px-4 me-sm-3">Get TUNIC</a>
+                <a href="https://github.com/silent-destroyer/tunic-randomizer#installation" class="btn btn-success btn-lg px-4">Download Rando Mod</a>
+            </div>
+        </div>
+        <div class="overflow-hidden" style="max-height: 35vh;">
+            <div class="container px-5">
+                <img src="assets/hero-screenshot.jpg" class="img-fluid border border-5 rounded-3 shadow-lg mb-4" alt="Example image" loading="lazy" width="800">
+            </div>
+        </div>
+    </div>
+    
+    <section class="py-3">
+        <div class="container overflow-hidden py-3 py-sm-4">
+            <div class="text-center col-sm-7 mx-auto" id="modes">
+                <h1 class="text-center text-white display-2">
+                    Game Modes
+                </h1>
+                <hr>
+                <p>
+                    Choose between a classic randomizer experience or Hexagon Quest.
+                </p>
+            </div>
+            <div class="mb-5">
+                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                    <div class="col-10 col-sm-8 col-lg-6">
+                        <img src="..." class="d-block mx-lg-auto img-fluid placeholder rounded-3" alt="Bootstrap Themes" loading="lazy" width="640" height="360">
+                    </div>
+                    <div class="col-lg-6">
+                        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+                            Classic Randomizer
+                        </h1>
+                        <p class="display-6">
+                            Find the three Hexagon Keys and Take Your Rightful Place or Share Your Wisdom to finish.
+                        </p>
+                    </div>
+                </div>
+                <div class="row flex-lg-row align-items-center g-5 py-5">
+                    <div class="col-10 col-sm-8 col-lg-6">
+                        <img src="..." class="d-block mx-lg-auto img-fluid placeholder rounded-3" alt="Bootstrap Themes" loading="lazy" width="640" height="360"> 
+                    </div>
+                    <div class="col-lg-6">
+                        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+                            Hexagon Quest
+                        </h1>
+                        <p class="display-6">
+                            30 Gold Hexagons are shuffled throughout the world. Find 20 of them and visit The Heir to finish.
+                        </p>
+                        <p>
+                            <em>Note: Enemy randomization is not currently supported in this mode.</em>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center col-sm-7 mx-auto" id="logic">
+                <h1 class="text-center text-white display-2">
+                    Logic Options
+                </h1>
+                <hr>
+                <p>
+                    Customize your randomizer experience to your liking. Must be set before starting a new game.
+                </p>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-5 py-5 mb-5 text-center">
+                <div class="col">
+                    <img src="assets/sword-progression.jpg" class="img-fluid rounded-circle border border-5 mb-3" width="150">
+                    <h3 class="text-white">
+                        <i class="fas fa-circle text-success fs-6"></i>
+                        Sword Progression
+                    </h3>
+                    <p>
+                        Replaces the stick / swords in the item pool with four "Sword Upgrades" that progressively level up.
+                    </p>
+                </div>
+                <div class="col">
+                    <img src="assets/ability-shuffle.jpg" class="img-fluid rounded-circle border border-5 mb-3" width="150">
+                    <h3 class="text-white">
+                        <i class="fas fa-circle text-danger fs-6"></i>
+                        Shuffle Abilities
+                    </h3>
+                    <p>
+                        Locks the ability to pray, <abbr title="This option only locks Holy Cross codes that block access to checks in the randomizer. The free bomb codes and other player-facing codes like Big Head Mode, Sunglasses, Fairy Seeker, etc. are still usable from the start.">use the Holy Cross*</abbr>, and use the Ice Rod combo until the respective manual pages are found.
+                    </p>
+                </div>
+                <div class="col">
+                    <img src="assets/keys-behind-bosses.jpg" class="img-fluid rounded-circle border border-5 mb-3" width="150">
+                    <h3 class="text-white">
+                        <i class="fas fa-circle text-danger fs-6"></i>
+                        Keys Behind Bosses
+                    </h3>
+                    <p>
+                        Choose if the three Hexagon Keys are randomly shuffled or placed behind their respective boss fights.
+                    </p>
+                </div>
+                <div class="col">
+                    <img src="assets/start-sword.jpg" class="img-fluid rounded-circle border border-5 mb-3" width="150">
+                    <h3 class="text-white">
+                        <i class="fas fa-circle text-danger fs-6"></i>
+                        Start with Sword
+                    </h3>
+                    <p>
+                        The player will spawn with a Sword in the inventory on New Game. Does not count towards Sword Progression.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="text-center col-sm-7 mx-auto" id="settings">
+                <h1 class="text-center text-white display-3">
+                    Other Settings
+                </h1>
+                <hr>
+                <p>
+                    These options can be changed at any time throughout the game.
+                </p>
+            </div>
+            <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3 g-5 mb-5 py-5">
+                <div class="col">
+                    <h3 class="text-white">
+                        <i class="fas fa-skull text-danger"></i>
+                        Easier Heir Fight
+                    </h3>
+                    <p>
+                        Attacks deal additional damage to The Heir based on the total number of checks found.
+                    </p>
+                </div>
+                <div class="col">
+                    <h3 class="text-white">
+                        <i class="fas fa-shopping-cart text-success"></i>
+                        Cheaper Shop Items
+                    </h3>
+                    <p>
+                        Reduces the cost of the four randomized Shop items from 1000 to 300. Does not affect other Shop items.
+                    </p>
+                </div>
+                <div class="col">
+                    <h3 class="text-white">
+                        <i class="fas fa-user-plus text-success"></i>
+                        Bonus Upgrades
+                    </h3>
+                    <p>
+                        Makes the "golden treasure" items give a bonus level-up to certain stats on pick-up (not applied retroactively).
+                    </p>
+                </div>
+                <div class="col">
+                    <h3 class="text-white">
+                        <i class="fas fa-user-plus text-success"></i>
+                        Chest Interruption
+                    </h3>
+                    <p>
+                        Enemies will not be able to interrupt you while opening chests if this option is turned on.
+                    </p>
+                </div>
+                <div class="col">
+                    <h3 class="text-white">
+                        <i class="fas fa-exclamation-triangle text-success"></i>
+                        Fool Traps
+                    </h3>
+                    <p>
+                        Enables traps that replace low-value money rewards and damage or add negative effects.
+                    </p>
+                </div>
+                <div class="col">
+                    <h3 class="text-white">
+                        <i class="fas fa-question-circle text-danger"></i>
+                        ???
+                    </h3>
+                    <p style="unicode-bidi: bidi-override; direction: rtl; text-align: left;">
+                        Turn on this setting for a nice, if not nauseating, surprise!
+                    </p>
+                </div>
+            </div>
+            
+            <div class="text-center col-sm-7 mx-auto" id="hint">
+                <h1 class="text-center text-white display-3">
+                    Hint Settings
+                </h1>
+                <hr>
+                <p>
+                    Optional settings that add hints for progress to the game.
+                </p>
+            </div>
+            <div class="row row-cols-1 row-cols-lg-3 g-5 py-5 mb-5">
+                <div class="col">
+                    <h3 class="text-white">
+                        <i class="fas fa-star text-success"></i>
+                        Path of the Hero
+                    </h3>
+                    <p>
+                        Places a major hint at specific locations around the world, including the Mailbox, the Hero's Graves, and the plaque in the Sealed Temple. These hint towards major progression items, such as Magic Items, Laurels, Hexagons, and more.
+                    </p>
+                </div>
+                <div class="col">
+                    <h3 class="text-white">
+                        <i class="fab fa-snapchat-ghost text-success"></i>
+                        Ghost Foxes
+                    </h3>
+                    <p>
+                        Spawns 15 Ghost Foxes around the world that give minor hints. These hints include the locations of useful non-progression items, items in hard-to-reach locations, and barren locations. There are over 50 unique Ghost Fox spawns, all with their own custom dialogue!
+                    </p>
+                </div>
+                <div class="col">
+                    <h3 class="text-white">
+                        <i class="far fa-eye text-success"></i>
+                        Items and Chests Match
+                    </h3>
+                    <p>
+                        All freestanding items will have their model swapped to appear as the item they are randomized as. Chest textures will be swapped to match the item inside. This includes Fairies, Treasures, the three Hexagons, and the Hero's Laurels.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="text-center col-sm-7 mx-auto" id="links">
+                <h1 class="text-center text-white display-3">
+                    Other Links
+                </h1>
+                <hr>
+                <p>
+                    Optional settings that add hints for progress to the game.
+                </p>
+            </div>
+            <div class="row row-cols-1 row-cols-lg-3 py-5 mb-5 g-5">
+                <div class="col">
+                    <h3 class="text-white">
+                        <a href="https://discord.gg/HXkztJgQWj" class="text-decoration-none link-light external">
+                            <i class="fab fa-discord text-primary-emphasis pe-1"></i>
+                            Community Server
+                        </a>
+                    </h3>
+                    <p>
+                        Whether you're interested in solo rando, multi-world rando, or you simply enjoy watching runs — this is a great place to become a part of the community and hang out with other fans.
+                    </p>
+                    <a href="https://discord.gg/HXkztJgQWj" class="btn btn-light external">
+                        Join Server
+                    </a>
+                </div>
+                <div class="col">
+                    <h3 class="text-white">
+                        <a href="https://github.com/silent-destroyer/tunic-randomizer-archipelago" class="text-decoration-none link-light external">
+                            <i class="fas fa-globe text-success-emphasis pe-1"></i>
+                            TUNIC Archipelago
+                        </a>
+                    </h3>
+                    <p>
+                        Want to learn how to speedrun this game? Maybe just looking to pick up some techniques to optimize your randomizer game? Look no further! We also have a website with extensive guides on most categories.
+                    </p>
+                    <a href="https://github.com/silent-destroyer/tunic-randomizer-archipelago" class="btn btn-light external">
+                        Find on GitHub
+                    </a>
+                </div>
+                <div class="col">
+                    <h3 class="text-white">
+                        <a href="https://tunic.run/" class="text-decoration-none link-light external">
+                            <i class="fas fa-stopwatch text-danger-emphasis pe-1"></i>
+                            Speedrunning
+                        </a>
+                    </h3>
+                    <p>
+                        Want to learn how to speedrun this game? Maybe just looking to pick up some techniques to optimize your randomizer game? Look no further! We also have a website with extensive guides on most categories.
+                    </p>
+                    <a href="https://tunic.run/" class="btn btn-light external">
+                        View Guides
+                    </a>
+                </div>
+            </div>
+        </div>    
+    </section>
+    
+    <section class="footer-pic d-print-none pt-5 pb-4"></section>
+    
+    <footer class="site-footer d-print-none pt-4 pb-3">
+        <div class="container">
+            <p>
+                &copy; 2023 <a href="https://twitch.tv/radicoon" class="link-light">Radicoon</a>
+                &bull; Built Using <a href="https://getbootstrap.com/docs/5.3/" class="link-light">Bootstrap</a>
+                and <a href="https://fontawesome.com/" class="link-light">Font Awesome</a> <small><i class="fas fa-heart"></i></small>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

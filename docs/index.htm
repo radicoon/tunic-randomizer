@@ -31,7 +31,7 @@
     
     <header class="py-2 sticky-top bg-dark-subtle shadow">
         <div class="container">
-            <nav class="navbar navbar-expand-md">
+            <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                     <a class="navbar-brand fs-4" href="#">🦊 TUNIC Randomizer</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,7 +49,16 @@
                                 <a href="#hints" class="nav-link">Hints</a>
                             </li>
                             <li class="nav-item">
+                                <a href="#enemies" class="nav-link">Enemies</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#fox" class="nav-link">Fox</a>
+                            </li>
+                            <li class="nav-item">
                                 <a href="#settings" class="nav-link">Settings</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#trackers" class="nav-link">Trackers</a>
                             </li>
                             <li class="nav-item">
                                 <a href="#links" class="nav-link">Links</a>
@@ -98,10 +107,10 @@
             <div class="mb-5">
                 <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
                     <div class="col-10 col-sm-8 col-lg-6">
-                        <img src="..." class="d-block mx-lg-auto img-fluid placeholder rounded-3 shadow-lg" alt="Bootstrap Themes" loading="lazy" width="640" height="360">
+                        <img src="..." class="d-block mx-lg-auto img-fluid placeholder rounded-3 shadow-lg" alt="" loading="lazy" width="640" height="360">
                     </div>
                     <div class="col-lg-6">
-                        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+                        <h1 class="display-5 fw-semibold text-body-emphasis lh-1 mb-3">
                             Classic Randomizer
                         </h1>
                         <p class="display-6">
@@ -111,17 +120,17 @@
                 </div>
                 <div class="row flex-lg-row align-items-center g-5 py-5">
                     <div class="col-10 col-sm-8 col-lg-6">
-                        <img src="..." class="d-block mx-lg-auto img-fluid placeholder rounded-3 shadow-lg" alt="Bootstrap Themes" loading="lazy" width="640" height="360"> 
+                        <img src="..." class="d-block mx-lg-auto img-fluid placeholder rounded-3 shadow-lg" alt="" loading="lazy" width="640" height="360"> 
                     </div>
                     <div class="col-lg-6">
-                        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+                        <h1 class="display-5 fw-semibold text-body-emphasis lh-1 mb-3">
                             Hexagon Quest
                         </h1>
                         <p class="display-6">
                             30 Gold Hexagons are shuffled throughout the world. Find 20 of them and visit The Heir to finish.
                         </p>
                         <p>
-                            <em>Note: Enemy randomization is not currently supported in this mode.</em>
+                            <em>Note: Ability shuffling is not currently supported in this mode.</em>
                         </p>
                     </div>
                 </div>
@@ -243,7 +252,8 @@
             <div class="mb-5">
                 <div class="row flex-lg-row align-items-center g-5 py-5">
                     <div class="col-10 col-sm-8 col-lg-6">
-                        <img src="..." class="d-block mx-lg-auto img-fluid placeholder rounded-3 shadow-lg" alt="Bootstrap Themes" loading="lazy" width="640" height="360">
+                        <!--<img src="..." class="d-block mx-lg-auto img-fluid placeholder rounded-3 shadow-lg" alt="" loading="lazy" width="640" height="360">-->
+                        <video src="assets/ghost-foxes.mp4" type="video/mp4" preload="auto" autoplay muted loop class="d-block mx-lg-auto img-fluid border rounded-3 shadow-lg"></video>
                     </div>
                     <div class="col-lg-6">
                         <h2 class="display-5 text-body-emphasis mb-4">
@@ -257,7 +267,7 @@
                 </div>
                 <div class="row flex-lg-row-reverse align-items-center g-5 py-5 mb-5">
                     <div class="col-10 col-sm-8 col-lg-6">
-                        <img src="..." class="d-block mx-lg-auto img-fluid placeholder rounded-3 shadow-lg" alt="Bootstrap Themes" loading="lazy" width="640" height="360"> 
+                        <img src="..." class="d-block mx-lg-auto img-fluid placeholder rounded-3 shadow-lg" alt="" loading="lazy" width="640" height="360"> 
                     </div>
                     <div class="col-lg-6">
                         <h2 class="display-5 text-body-emphasis mb-4">
@@ -271,6 +281,113 @@
                 </div>
             </div>
             
+            <div class="text-center col-sm-7 mx-auto pb-4">
+                <h1 class="text-center text-white display-3" id="enemies">
+                    Enemy Randomization
+                </h1>
+                <hr>
+                <p>
+                    Randomly swaps out enemies with new ones when you load into a scene. Can be toggled at any point.
+                </p>
+            </div>
+            
+            <img src="assets/enemies.jpg" class="img-fluid border rounded-5 shadow-lg d-block" width="1280" height="360">
+            
+            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-5 mb-5 py-5">
+                <div class="col">
+                    <h2 class="text-white">
+                        <i class="fas fa-plus-square"></i>
+                        Extra Enemies
+                    </h2>
+                    <p>
+                        Choose whether or not to enable New Game+ and Dark World enemy slots to add more enemies into the mix for increased chaos.
+                    </p>
+                </div>
+                <div class="col">
+                    <h2 class="text-white">
+                        <i class="fas fa-skull"></i>
+                        Enemy Difficulty
+                    </h2>
+                    <p>
+                        <span class="text-danger-emphasis">Random:</span> All enemy spawns are chosen randomly from the full pool of enemies. <span class="text-success-emphasis">Balanced:</span> Enemies will only be replaced with an enemy of similar difficulty.
+                    </p>
+                </div>
+                <div class="col">
+                    <h2 class="text-white">
+                        <i class="fas fa-seedling"></i>
+                        Enemy Generation
+                    </h2>
+                    <p>
+                        <span class="text-danger-emphasis">Random:</span> Enemies will change every time you leave and come back to an area. <span class="text-success-emphasis">Seeded:</span> Enemy spawns will remain consistent per area.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="text-center col-sm-7 mx-auto">
+                <h1 class="text-center text-white display-3" id="fox">
+                    Fox Customization
+                </h1>
+                <hr>
+                <p>
+                    Color and style your Ruin Seeker, even beyond the colors available in the changing room.
+                </p>
+            </div>
+            <div class="row row-cols-1 row-cols-lg-2 g-5 mb-5 py-5">
+                <div class="col">
+                    <div class="border overflow-hidden text-bg-dark rounded-4 shadow-lg h-100" style="background-image: url('assets/random-fox-color.jpg'); background-size: cover;">
+                        <div class="p-5 text-white col-md-10 mx-auto text-center">
+                            <h3 class="pt-3 mb-4 display-6 fw-semibold" style="text-shadow: 0 3px 10px #333;">
+                                <i class="fas fa-random"></i>
+                                Random Fox Colors
+                            </h3>
+                            <p class="lead fs-4" style="text-shadow: 0 3px 10px #111;">
+                                Fox colors will randomize everytime you enter a new scene or rest at a shrine.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="border overflow-hidden text-bg-dark rounded-4 shadow-lg h-100" style="background-image: url('assets/keepin-it-real.jpg'); background-size: cover;">
+                        <div class="p-5 text-white col-md-10 mx-auto text-center">
+                            <h3 class="pt-3 mb-4 display-6 fw-semibold" style="text-shadow: 0 3px 10px #333;">
+                                <i class="fas fa-glasses"></i>
+                                Keepin' It Real
+                            </h3>
+                            <p class="lead fs-4" style="text-shadow: 0 3px 5px #111;">
+                                Toggles "Fox Sunglasses" on and off without needing to use the HC code.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="py-4">
+                        <div class="pb-4">
+                            <h2 class="text-white">
+                                <i class="fas fa-palette"></i>
+                                Fox Color Editor
+                            </h2>
+                            <hr>
+                            <p>
+                                Opens an in-depth fox palette editor that allows you to create/save/load a custom color palette texture for the fox.
+                            </p>
+                        </div>
+                        <div>
+                            <h2 class="text-white">
+                                <i class="fas fa-file-image"></i>
+                                Use Custom Texture
+                            </h2>
+                            <hr>
+                            <p>
+                                When enabled, will always apply the saved custom texture to the fox. Note: Random Fox Colors should be disabled when using this setting or it may not work properly. The custom texture can be found under AppData in the same folder as the Spoiler log and Item Tracker file.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <video src="assets/color-editor.mp4" type="video/mp4" preload="auto" autoplay muted loop class="d-block mx-lg-auto img-fluid border rounded-3 shadow-lg"></video>
+                </div>
+            </div>
+            
             <div class="text-center col-sm-7 mx-auto">
                 <h1 class="text-center text-white display-3" id="settings">
                     Other Settings
@@ -280,7 +397,7 @@
                     These options can be changed at any time throughout the game.
                 </p>
             </div>
-            <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3 g-5 mb-5 py-5">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-5 mb-5 py-5">
                 <div class="col">
                     <h3 class="text-white">
                         <i class="fas fa-skull text-info"></i>
@@ -334,6 +451,58 @@
                     <p style="unicode-bidi: bidi-override; direction: rtl; text-align: left;">
                         Turn on this setting for a nice, if not nauseating, surprise!
                     </p>
+                </div>
+            </div>
+            
+            <div class="text-center col-sm-7 mx-auto">
+                <h1 class="text-center text-white display-3" id="trackers">
+                    Trackers
+                </h1>
+                <hr>
+                <p>
+                    Add-on software or sites to help track your progress.
+                </p>
+            </div>
+            <div class="row row-cols-1 row-cols-lg-2 py-5 mb-5 g-5">
+                <div class="col">
+                    <div class="card card-cover overflow-hidden bg-body-tertiary rounded-4 shadow-lg h-100">
+                        <img src="assets/emotracker.jpg" class="img-fluid">
+                        <div class="pt-4 pb-5 px-5 text-white mx-auto text-center">
+                            <div class="h2 mb-0">
+                                <a href="https://github.com/SapphireSapphic/TunicTracker" class="text-decoration-none external">
+                                    <i class="far fa-map"></i>
+                                    EmoTracker Package
+                                </a>
+                            </div>
+                            <p class="lead">
+                                By SapphireSapphic and ScoutJD
+                            </p>
+                            <hr>
+                            <p class="lead">
+                                EmoTracker is a standard, multi-game tracking software, and TUNIC is supported! To install, simply navigate to the package manager in EmoTracker, and search "Tunic", then hit download!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-cover overflow-hidden bg-body-tertiary rounded-4 shadow-lg h-100"">
+                        <img src="assets/auto-tracker.jpg" class="img-fluid">
+                        <div class="pt-4 pb-5 px-5 text-white mx-auto text-center">
+                            <div class="h2 mb-0">
+                                <a href="https://github.com/radicoon/tunic-rando-tracker#instructions" class="text-decoration-none external">
+                                    <i class="fas fa-magic"></i>
+                                    Auto-Tracker
+                                </a>
+                            </div>
+                            <p class="lead">
+                                By Radicoon
+                            </p>
+                            <hr>
+                            <p class="lead">
+                                A Windows-based auto-tracker to better facilitate tournament-style play and/or auto-tracking for streamers already comfortable with the game's logic and checks.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
             

@@ -29,19 +29,16 @@
 <body>
     <a href="#content" class="sr-only sr-only-focusable">Skip to Main Content</a>
     
-    <header class="py-2 sticky-top bg-dark shadow">
+    <header class="py-2 sticky-top bg-dark-subtle shadow">
         <div class="container">
             <nav class="navbar navbar-expand-md">
                 <div class="container-fluid">
-                    <a class="navbar-brand fs-4" href="index.htm">🦊 TUNIC Randomizer</a>
+                    <a class="navbar-brand fs-4" href="#">🦊 TUNIC Randomizer</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse justify-content-end" id="main-nav">
                         <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Home</a>
-                            </li>
                             <li class="nav-item">
                                 <a href="#modes" class="nav-link">Modes</a>
                             </li>
@@ -49,10 +46,10 @@
                                 <a href="#logic" class="nav-link">Logic</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#settings" class="nav-link">Settings</a>
+                                <a href="#hints" class="nav-link">Hints</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#hints" class="nav-link">Hints</a>
+                                <a href="#settings" class="nav-link">Settings</a>
                             </li>
                             <li class="nav-item">
                                 <a href="#links" class="nav-link">Links</a>
@@ -89,8 +86,8 @@
     
     <section class="py-3">
         <div class="container overflow-hidden py-3 py-sm-4">
-            <div class="text-center col-sm-7 mx-auto" id="modes">
-                <h1 class="text-center text-white display-2">
+            <div class="text-center col-sm-7 mx-auto">
+                <h1 class="text-center text-white display-2" id="modes">
                     Game Modes
                 </h1>
                 <hr>
@@ -101,7 +98,7 @@
             <div class="mb-5">
                 <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
                     <div class="col-10 col-sm-8 col-lg-6">
-                        <img src="..." class="d-block mx-lg-auto img-fluid placeholder rounded-3" alt="Bootstrap Themes" loading="lazy" width="640" height="360">
+                        <img src="..." class="d-block mx-lg-auto img-fluid placeholder rounded-3 shadow-lg" alt="Bootstrap Themes" loading="lazy" width="640" height="360">
                     </div>
                     <div class="col-lg-6">
                         <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
@@ -114,7 +111,7 @@
                 </div>
                 <div class="row flex-lg-row align-items-center g-5 py-5">
                     <div class="col-10 col-sm-8 col-lg-6">
-                        <img src="..." class="d-block mx-lg-auto img-fluid placeholder rounded-3" alt="Bootstrap Themes" loading="lazy" width="640" height="360"> 
+                        <img src="..." class="d-block mx-lg-auto img-fluid placeholder rounded-3 shadow-lg" alt="Bootstrap Themes" loading="lazy" width="640" height="360"> 
                     </div>
                     <div class="col-lg-6">
                         <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
@@ -130,8 +127,8 @@
                 </div>
             </div>
             
-            <div class="text-center col-sm-7 mx-auto" id="logic">
-                <h1 class="text-center text-white display-2">
+            <div class="text-center col-sm-7 mx-auto">
+                <h1 class="text-center text-white display-2" id="logic">
                     Logic Options
                 </h1>
                 <hr>
@@ -141,49 +138,141 @@
             </div>
             <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-5 py-5 mb-5 text-center">
                 <div class="col">
-                    <img src="assets/sword-progression.jpg" class="img-fluid rounded-circle border border-5 mb-3" width="150">
-                    <h3 class="text-white">
-                        <i class="fas fa-circle text-success fs-6"></i>
+                    <img src="assets/sword-progression.jpg" class="img-fluid shadow rounded-circle border border-5 mb-3" width="200">
+                    <h2 class="text-white">
                         Sword Progression
-                    </h3>
+                    </h2>
                     <p>
                         Replaces the stick / swords in the item pool with four "Sword Upgrades" that progressively level up.
                     </p>
                 </div>
                 <div class="col">
-                    <img src="assets/ability-shuffle.jpg" class="img-fluid rounded-circle border border-5 mb-3" width="150">
-                    <h3 class="text-white">
-                        <i class="fas fa-circle text-danger fs-6"></i>
+                    <img src="assets/ability-shuffle.jpg" class="img-fluid shadow rounded-circle border border-5 mb-3" width="200">
+                    <h2 class="text-white">
                         Shuffle Abilities
-                    </h3>
+                    </h2>
                     <p>
                         Locks the ability to pray, <abbr title="This option only locks Holy Cross codes that block access to checks in the randomizer. The free bomb codes and other player-facing codes like Big Head Mode, Sunglasses, Fairy Seeker, etc. are still usable from the start.">use the Holy Cross*</abbr>, and use the Ice Rod combo until the respective manual pages are found.
                     </p>
                 </div>
                 <div class="col">
-                    <img src="assets/keys-behind-bosses.jpg" class="img-fluid rounded-circle border border-5 mb-3" width="150">
-                    <h3 class="text-white">
-                        <i class="fas fa-circle text-danger fs-6"></i>
+                    <img src="assets/keys-behind-bosses.jpg" class="img-fluid shadow rounded-circle border border-5 mb-3" width="200">
+                    <h2 class="text-white">
                         Keys Behind Bosses
-                    </h3>
+                    </h2>
                     <p>
                         Choose if the three Hexagon Keys are randomly shuffled or placed behind their respective boss fights.
                     </p>
                 </div>
                 <div class="col">
-                    <img src="assets/start-sword.jpg" class="img-fluid rounded-circle border border-5 mb-3" width="150">
-                    <h3 class="text-white">
-                        <i class="fas fa-circle text-danger fs-6"></i>
+                    <img src="assets/start-sword.jpg" class="img-fluid shadow rounded-circle border border-5 mb-3" width="200">
+                    <h2 class="text-white">
                         Start with Sword
-                    </h3>
+                    </h2>
                     <p>
                         The player will spawn with a Sword in the inventory on New Game. Does not count towards Sword Progression.
                     </p>
                 </div>
             </div>
             
-            <div class="text-center col-sm-7 mx-auto" id="settings">
-                <h1 class="text-center text-white display-3">
+            <div class="text-center col-sm-7 mx-auto pb-3">
+                <h1 class="text-center text-white display-2" id="hints">
+                    Hint Options
+                </h1>
+                <hr>
+                <p>
+                    Optional settings that add hints for progress to the game.
+                </p>
+            </div>
+            
+            <div class="card card-cover overflow-hidden text-bg-dark rounded-5 shadow-lg my-5" style="background-image: url('assets/categories.jpg');">
+                <div class="p-5 text-white col-md-8 mx-auto text-center">
+                    <h3 class="pt-3 mb-4 display-3 fw-semibold" style="text-shadow: 0 3px 10px #333;">
+                        <i class="fas fa-star text-warning"></i>
+                        Path of the Hero
+                    </h3>
+                    <p class="lead fs-2" style="text-shadow: 0 3px 10px #111;">
+                        Places a <b>major hint</b> at specific locations around the world towards major progression items.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-5 py-4 text-center">
+                <div class="col">
+                    <img src="assets/mailbox.jpg" class="img-fluid rounded-circle border border-3 shadow mb-3" width="150">
+                    <h2 class="text-white">
+                        First Step
+                    </h2>
+                    <hr>
+                    <p>
+                        The <span class="text-warning-emphasis">Mailbox</span> will always give you a hint for a useful item that is not blocked by progression (or rarely, something to unlock a useful item).
+                    </p>   
+                </div>
+                <div class="col">
+                    <img src="assets/major-items.jpg" class="img-fluid rounded-circle border border-3 shadow mb-3" width="150">
+                    <h2 class="text-white">
+                        Major Items
+                    </h2>
+                    <hr>
+                    <p>
+                        The Hero's Graves in <span class="text-warning-emphasis">East Forest</span>, <span class="text-warning-emphasis">West Garden</span>, and the <span class="text-warning-emphasis">Eastern Vault Fortress</span> hint toward a major item (e.g, Orb, Wand) or ability (if Shuffling is enabled).
+                    </p>
+                </div>
+                <div class="col">
+                    <img src="assets/hex-keys.jpg" class="img-fluid rounded-circle border border-3 shadow mb-3" width="150">
+                    <h2 class="text-white">
+                        Hexagon Keys
+                    </h2>
+                    <hr>
+                    <p>
+                        The Hero's Grave in the <span class="text-warning-emphasis">Swamp</span>, the <span class="text-warning-emphasis">Monastery</span>, and the <span class="text-warning-emphasis">Library</span> will hint at the location of one of the three Hexagon keys&mdash;but which one?
+                    </p>
+                </div>
+                <div class="col">
+                    <img src="assets/laurels.jpg" class="img-fluid rounded-circle border border-3 shadow mb-3" width="150">
+                    <h2 class="text-white">
+                        Hero's Laurels
+                    </h2>
+                    <hr>
+                    <p>
+                        The plaque on the statue inside the <span class="text-warning-emphasis">Sealed Temple</span> will always hint the location of the Hero's Laurels.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="mb-5">
+                <div class="row flex-lg-row align-items-center g-5 py-5">
+                    <div class="col-10 col-sm-8 col-lg-6">
+                        <img src="..." class="d-block mx-lg-auto img-fluid placeholder rounded-3 shadow-lg" alt="Bootstrap Themes" loading="lazy" width="640" height="360">
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="display-5 text-body-emphasis mb-4">
+                            Ghost Foxes
+                        </h2>
+                        <hr>
+                        <p class="fs-4 lead">
+                            Spawns 15 Ghost Foxes around the world that give minor hints. These hints include the locations of useful non-progression items, items in hard-to-reach locations, and barren locations. There are over 50 unique Ghost Fox spawns, all with their own custom dialogue!
+                        </p>
+                    </div>
+                </div>
+                <div class="row flex-lg-row-reverse align-items-center g-5 py-5 mb-5">
+                    <div class="col-10 col-sm-8 col-lg-6">
+                        <img src="..." class="d-block mx-lg-auto img-fluid placeholder rounded-3 shadow-lg" alt="Bootstrap Themes" loading="lazy" width="640" height="360"> 
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="display-5 text-body-emphasis mb-4">
+                            Items and Chests Match
+                        </h2>
+                        <hr>
+                        <p class="fs-4 lead">
+                            All free-standing items will have their model swapped to their randomized item. Chest textures will also be swapped to match the item inside, including Fairies, Treasures, the three Hexagons, and the Hero's Laurels.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center col-sm-7 mx-auto">
+                <h1 class="text-center text-white display-3" id="settings">
                     Other Settings
                 </h1>
                 <hr>
@@ -194,7 +283,7 @@
             <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3 g-5 mb-5 py-5">
                 <div class="col">
                     <h3 class="text-white">
-                        <i class="fas fa-skull text-danger"></i>
+                        <i class="fas fa-skull text-info"></i>
                         Easier Heir Fight
                     </h3>
                     <p>
@@ -203,7 +292,7 @@
                 </div>
                 <div class="col">
                     <h3 class="text-white">
-                        <i class="fas fa-shopping-cart text-success"></i>
+                        <i class="fas fa-shopping-cart text-info"></i>
                         Cheaper Shop Items
                     </h3>
                     <p>
@@ -212,7 +301,7 @@
                 </div>
                 <div class="col">
                     <h3 class="text-white">
-                        <i class="fas fa-user-plus text-success"></i>
+                        <i class="fas fa-user-plus text-info"></i>
                         Bonus Upgrades
                     </h3>
                     <p>
@@ -221,7 +310,7 @@
                 </div>
                 <div class="col">
                     <h3 class="text-white">
-                        <i class="fas fa-user-plus text-success"></i>
+                        <i class="fas fa-user-plus text-info"></i>
                         Chest Interruption
                     </h3>
                     <p>
@@ -230,7 +319,7 @@
                 </div>
                 <div class="col">
                     <h3 class="text-white">
-                        <i class="fas fa-exclamation-triangle text-success"></i>
+                        <i class="fas fa-exclamation-triangle text-info"></i>
                         Fool Traps
                     </h3>
                     <p>
@@ -239,7 +328,7 @@
                 </div>
                 <div class="col">
                     <h3 class="text-white">
-                        <i class="fas fa-question-circle text-danger"></i>
+                        <i class="fas fa-question-circle text-info"></i>
                         ???
                     </h3>
                     <p style="unicode-bidi: bidi-override; direction: rtl; text-align: left;">
@@ -248,48 +337,9 @@
                 </div>
             </div>
             
-            <div class="text-center col-sm-7 mx-auto" id="hint">
-                <h1 class="text-center text-white display-3">
-                    Hint Settings
-                </h1>
-                <hr>
-                <p>
-                    Optional settings that add hints for progress to the game.
-                </p>
-            </div>
-            <div class="row row-cols-1 row-cols-lg-3 g-5 py-5 mb-5">
-                <div class="col">
-                    <h3 class="text-white">
-                        <i class="fas fa-star text-success"></i>
-                        Path of the Hero
-                    </h3>
-                    <p>
-                        Places a major hint at specific locations around the world, including the Mailbox, the Hero's Graves, and the plaque in the Sealed Temple. These hint towards major progression items, such as Magic Items, Laurels, Hexagons, and more.
-                    </p>
-                </div>
-                <div class="col">
-                    <h3 class="text-white">
-                        <i class="fab fa-snapchat-ghost text-success"></i>
-                        Ghost Foxes
-                    </h3>
-                    <p>
-                        Spawns 15 Ghost Foxes around the world that give minor hints. These hints include the locations of useful non-progression items, items in hard-to-reach locations, and barren locations. There are over 50 unique Ghost Fox spawns, all with their own custom dialogue!
-                    </p>
-                </div>
-                <div class="col">
-                    <h3 class="text-white">
-                        <i class="far fa-eye text-success"></i>
-                        Items and Chests Match
-                    </h3>
-                    <p>
-                        All freestanding items will have their model swapped to appear as the item they are randomized as. Chest textures will be swapped to match the item inside. This includes Fairies, Treasures, the three Hexagons, and the Hero's Laurels.
-                    </p>
-                </div>
-            </div>
-            
-            <div class="text-center col-sm-7 mx-auto" id="links">
-                <h1 class="text-center text-white display-3">
-                    Other Links
+            <div class="text-center col-sm-7 mx-auto">
+                <h1 class="text-center text-white display-3" id="links">
+                    Community Links
                 </h1>
                 <hr>
                 <p>
@@ -307,7 +357,7 @@
                     <p>
                         Whether you're interested in solo rando, multi-world rando, or you simply enjoy watching runs — this is a great place to become a part of the community and hang out with other fans.
                     </p>
-                    <a href="https://discord.gg/HXkztJgQWj" class="btn btn-light external">
+                    <a href="https://discord.gg/HXkztJgQWj" class="btn btn-outline-light external">
                         Join Server
                     </a>
                 </div>
@@ -321,7 +371,7 @@
                     <p>
                         Want to learn how to speedrun this game? Maybe just looking to pick up some techniques to optimize your randomizer game? Look no further! We also have a website with extensive guides on most categories.
                     </p>
-                    <a href="https://github.com/silent-destroyer/tunic-randomizer-archipelago" class="btn btn-light external">
+                    <a href="https://github.com/silent-destroyer/tunic-randomizer-archipelago" class="btn btn-outline-light external">
                         Find on GitHub
                     </a>
                 </div>
@@ -335,7 +385,7 @@
                     <p>
                         Want to learn how to speedrun this game? Maybe just looking to pick up some techniques to optimize your randomizer game? Look no further! We also have a website with extensive guides on most categories.
                     </p>
-                    <a href="https://tunic.run/" class="btn btn-light external">
+                    <a href="https://tunic.run/" class="btn btn-outline-light external">
                         View Guides
                     </a>
                 </div>

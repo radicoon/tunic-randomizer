@@ -1,4 +1,4 @@
-.footer-pic{
+.footer-pic {
     background-image: url('bottom.jpg');
     background-position: 50%;
     background-repeat: no-repeat;
@@ -8,4 +8,9 @@
     color: #fafafa;
     min-height: 180px;
     position: relative;
+}
+
+h1 {
+    scroll-margin-top: 100px;
+    scroll-snap-margin-top: 100px;
 }

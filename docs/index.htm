@@ -26,7 +26,7 @@
         });
     </script>
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#main-nav-list">
     <a href="#content" class="sr-only sr-only-focusable">Skip to Main Content</a>
     
     <header class="py-2 sticky-top bg-dark-subtle shadow">
@@ -38,7 +38,7 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse justify-content-end" id="main-nav">
-                        <ul class="navbar-nav">
+                        <ul class="navbar-nav" id="main-nav-list">
                             <li class="nav-item">
                                 <a href="#modes" class="nav-link">Modes</a>
                             </li>
@@ -56,6 +56,9 @@
                             </li>
                             <li class="nav-item">
                                 <a href="#settings" class="nav-link">Settings</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#tips" class="nav-link">Tips</a>
                             </li>
                             <li class="nav-item">
                                 <a href="#setup" class="nav-link">Setup</a>
@@ -457,6 +460,78 @@
             </div>
             
             <div class="text-center col-sm-7 mx-auto">
+                <h1 class="text-center text-white display-3" id="tips">
+                    Tips and Hints!
+                </h1>
+                <hr>
+                <p>
+                    Stumped? Here are some clues for you! Try to help your friends if you can.
+                </p>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 py-5 mb-5 g-5 text-center">
+                <div class="col">
+                    <div class="overflow-hidden rounded-4 border shadow h-100">
+                        <img src="assets/hint-swamp.jpg" class="img-fluid border-bottom">
+                        <div class="p-3">
+                            <p>
+                                Someone didn't do a very good job with this fence.
+                            </p>   
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="overflow-hidden rounded-4 border shadow h-100">
+                        <img src="assets/hint-bombs.jpg" class="img-fluid border-bottom">
+                        <div class="p-3">
+                            <p>
+                                Bushes hate it when you use these codes.
+                            </p>   
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="overflow-hidden rounded-4 border shadow h-100">
+                        <img src="assets/hint-mask.jpg" class="img-fluid border-bottom">
+                        <div class="p-3">
+                            <p>
+                                This item will never be below the Quarry.
+                            </p>   
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="overflow-hidden rounded-4 border shadow h-100"">
+                        <img src="assets/hint-eastforest.jpg" class="img-fluid border-bottom">
+                        <div class="p-3">
+                            <p>
+                                This chest can be spawned at any time of day.
+                            </p>   
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="overflow-hidden rounded-4 border shadow h-100">
+                        <img src="assets/hint-secretlegend.jpg" class="img-fluid border-bottom">
+                        <div class="p-3">
+                            <p>
+                                This door can be opened from the outside.
+                            </p>   
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="overflow-hidden rounded-4 border shadow h-100">
+                        <img src="assets/hint-time.jpg" class="img-fluid border-bottom">
+                        <div class="p-3">
+                            <p>
+                                Don't worry about sunset too much.
+                            </p>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center col-sm-7 mx-auto">
                 <h1 class="text-center text-white display-3" id="setup">
                     Setup
                 </h1>
@@ -568,6 +643,56 @@
                 </div>
             </div>
             
+            <div class="row row-cols-1 row-cols-lg-2 py-5 mb-5 g-5">
+                <div class="col">
+                    <h1>Accessibilty of Areas in Logic</h1>
+                    <hr>
+                    <p>
+                        The Scavenger's Mask is in logic to not be shuffled into the lower areas of Quarry or within the Ziggurat.
+                    </p>
+                </div>
+                <div class="col">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Location</th>
+                                    <th>Lantern</th>
+                                    <th>Orb</th>
+                                    <th>Laurels</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>West Garden</td>
+                                    <td><i class="fas fa-check text-success-emphasis"></i></td>
+                                    <td><i class="fas fa-times text-danger-emphasis"></i></td>
+                                    <td><i class="fas fa-check text-success-emphasis"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Eastern Fortress</td>
+                                    <td><i class="fas fa-check text-success-emphasis"></i></td>
+                                    <td><i class="fas fa-times text-danger-emphasis"></i></td>
+                                    <td><i class="fas fa-check text-success-emphasis"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Library</td>
+                                    <td><i class="fas fa-times text-danger-emphasis"></i></td>
+                                    <td><i class="fas fa-check text-success-emphasis"></i></td>
+                                    <td><i class="fas fa-check text-success-emphasis"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>Cathedral</td>
+                                    <td><i class="fas fa-times text-danger-emphasis"></i></td>
+                                    <td><i class="fas fa-times text-danger-emphasis"></i></td>
+                                    <td><i class="fas fa-check text-success-emphasis"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                        </div>
+            </div>
+
             <div class="text-center col-sm-7 mx-auto">
                 <h1 class="text-center text-white display-3" id="links">
                     Community Links

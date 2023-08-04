@@ -10,13 +10,13 @@
     
     <title>TUNIC Randomizer</title>
     
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/style.css">
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <script>
         $(function(){ 
             $("a.external, a[href$='.pdf']").click(function(e){
@@ -76,30 +76,35 @@
         </div>
     </header>
     
-    <div class="px-4 pt-5 text-center border-bottom" style="background-image: url('assets/categories.jpg'); background-size: cover; background-repeat: no-repeat;">
-        <div class="my-2 text-center">
-            <img class="d-block mx-auto mb-4" src="assets/tunc.png" alt="" width="150" height="150">
-        </div>
-        <h1 class="display-4 fw-bold text-white">
-            TUNIC Randomizer
-        </h1>
-        <div class="col-lg-6 mx-auto">
-            <p class="lead mb-4 text-white">
-                An extensive randomizer mod for TUNIC, an action-adventure game about a tiny fox in a big world. Featuring randomization of every item in the game, as well as enemy randomization, enhanced fox customization, custom items, and much, much more!
-            </p>
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-                <a href="https://tunicgame.com/" class="btn btn-primary btn-lg px-4 me-sm-3">Get TUNIC</a>
-                <a href="https://github.com/silent-destroyer/tunic-randomizer#installation" class="btn btn-success btn-lg px-4">Download Rando Mod</a>
+    <section class="overflow-hidden">
+        <video autoplay muted loop class="position-absolute" style="width: 100%; height: 100vh; object-fit: cover; z-index: -1; filter: brightness(75%);">
+            <source src="assets/video/hero-0.mp4" type="video/mp4" autoplay>
+        </video>
+        <div class="px-4 pt-5 text-center border-bottom">
+            <div class="my-2 text-center">
+                <img class="d-block mx-auto mb-4" src="assets/tunc.png" alt="" width="150" height="150">
+            </div>
+            <h1 class="display-4 fw-bold text-white">
+                TUNIC Randomizer
+            </h1>
+            <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4 text-white">
+                    An extensive randomizer mod for TUNIC, an action-adventure game about a tiny fox in a big world. Featuring randomization of every item in the game, as well as enemy randomization, enhanced fox customization, custom items, and much, much more!
+                </p>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                    <a href="https://tunicgame.com/" class="btn btn-primary btn-lg px-4 me-sm-3">Get TUNIC</a>
+                    <a href="https://github.com/silent-destroyer/tunic-randomizer#installation" class="btn btn-success btn-lg px-4">Download Rando Mod</a>
+                </div>
+            </div>
+            <div class="overflow-hidden" style="max-height: 35vh;">
+                <div class="container px-5">
+                    <img src="assets/hero-screenshot.jpg" class="img-fluid border border-5 rounded-3 shadow-lg mb-4" alt="Example image" loading="lazy" width="800">
+                </div>
             </div>
         </div>
-        <div class="overflow-hidden" style="max-height: 35vh;">
-            <div class="container px-5">
-                <img src="assets/hero-screenshot.jpg" class="img-fluid border border-5 rounded-3 shadow-lg mb-4" alt="Example image" loading="lazy" width="800">
-            </div>
-        </div>
-    </div>
+    </section>
     
-    <section class="py-3">
+    <section class="py-3 bg-dark">
         <div class="container overflow-hidden py-3 py-sm-4">
             <!-- ------------- -->
             <!-- Modes Section -->
@@ -117,9 +122,11 @@
             <div class="mb-5">
                 <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
                     <div class="col-12 col-sm-8 col-lg-6">
-                        <img src="..." class="d-block mx-lg-auto img-fluid placeholder rounded-3 shadow-lg" alt="" loading="lazy" width="640" height="360">
+                        <video autoplay muted loop playsinline class="d-block mx-lg-auto img-fluid border border-2 rounded-3 shadow">
+                            <source src="assets/video/classic-rando.mp4" type="video/mp4">
+                        </video>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 text-end">
                         <h1 class="display-5 fw-semibold text-body-emphasis lh-1 mb-3">
                             Classic Randomizer
                         </h1>
@@ -130,7 +137,9 @@
                 </div>
                 <div class="row flex-lg-row align-items-center g-5 py-5">
                     <div class="col-12 col-sm-8 col-lg-6">
-                        <img src="..." class="d-block mx-lg-auto img-fluid placeholder rounded-3 shadow-lg" alt="" loading="lazy" width="640" height="360"> 
+                        <video autoplay muted loop playsinline class="d-block mx-lg-auto img-fluid border border-2 rounded-3 shadow">
+                            <source src="assets/video/hexagon-quest.mp4" type="video/mp4">
+                        </video>
                     </div>
                     <div class="col-lg-6">
                         <h1 class="display-5 fw-semibold text-body-emphasis lh-1 mb-3">
@@ -210,8 +219,36 @@
                 <p>
                     Optional settings that add hints for progress to the game.
                 </p>
-            </div>            
-            <div class="card card-cover overflow-hidden text-bg-dark rounded-5 shadow-lg my-5" style="background-image: url('assets/categories.jpg'); background-size: cover;">
+            </div>
+            <div class="row row-cols-1 row-cols-lg-2 g-5 mb-5 py-5">
+                <div class="col">
+                    <div class="border rounded rounded-4 shadow-lg h-100 overflow-hidden">
+                        <video src="assets/video/chest-items.mp4" type="video/mp4" preload="auto" autoplay muted loop playsinline class="img-fluid border-bottom"></video>
+                        <div class="p-4 mx-auto">
+                            <h2 class="display-5 text-body-emphasis mb-4">
+                                Items and Chests Match
+                            </h2>
+                            <p class="fs-4 lead">
+                                All free-standing items will have their model swapped to their randomized item. Chest textures will also be swapped to match the item inside, including Fairies, Treasures, the three Hexagons, and the Hero's Laurels.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="border rounded rounded-4 shadow-lg h-100 overflow-hidden">
+                        <video src="assets/video/ghost-foxes.mp4" type="video/mp4" preload="auto" autoplay muted loop playsinline class="img-fluid border-bottom"></video>
+                        <div class="p-4 mx-auto">
+                            <h2 class="display-5 text-body-emphasis mb-4">
+                                Ghost Foxes
+                            </h2>
+                            <p class="fs-4 lead">
+                                Spawns 15 ghosts around the world that give hints, including the locations of useful non-progression items, items in hard-to-reach locations, and barren locations. There are over 50 unique spawns, all with their own custom dialogue!
+                            </p>
+                        </div>
+                    </div>    
+                </div>    
+            </div>
+            <div class="card card-cover overflow-hidden text-bg-dark rounded-5 shadow-lg my-5" style="background-image: url('assets/path.jpg'); background-size: cover;">
                 <div class="p-5 text-white col-md-8 mx-auto text-center">
                     <h3 class="pt-3 mb-4 display-3 fw-semibold" style="text-shadow: 0 3px 10px #333;">
                         <i class="fas fa-star text-warning"></i>
@@ -264,36 +301,6 @@
                     </p>
                 </div>
             </div>            
-            <div class="mb-5">
-                <div class="row flex-lg-row align-items-center g-5 py-4">
-                    <div class="col-12 col-sm-8 col-lg-6">
-                        <video src="assets/ghost-foxes.mp4" type="video/mp4" preload="auto" autoplay muted loop class="d-block mx-lg-auto img-fluid border border-2 rounded-3 shadow-lg"></video>
-                    </div>
-                    <div class="col-lg-6">
-                        <h2 class="display-5 text-body-emphasis mb-4">
-                            Ghost Foxes
-                        </h2>
-                        <hr>
-                        <p class="fs-4 lead">
-                            Spawns 15 Ghost Foxes around the world that give minor hints. These hints include the locations of useful non-progression items, items in hard-to-reach locations, and barren locations. There are over 50 unique Ghost Fox spawns, all with their own custom dialogue!
-                        </p>
-                    </div>
-                </div>
-                <div class="row flex-lg-row-reverse align-items-center g-5 py-5 mb-5">
-                    <div class="col-12 col-sm-8 col-lg-6">
-                        <img src="..." class="d-block mx-lg-auto img-fluid placeholder rounded-3 shadow-lg" alt="" loading="lazy" width="640" height="360"> 
-                    </div>
-                    <div class="col-lg-6">
-                        <h2 class="display-5 text-body-emphasis mb-4">
-                            Items and Chests Match
-                        </h2>
-                        <hr>
-                        <p class="fs-4 lead">
-                            All free-standing items will have their model swapped to their randomized item. Chest textures will also be swapped to match the item inside, including Fairies, Treasures, the three Hexagons, and the Hero's Laurels.
-                        </p>
-                    </div>
-                </div>
-            </div>
             
             <!-- --------------- -->
             <!-- Enemies Section -->
@@ -307,8 +314,10 @@
                 <p>
                     Randomly swaps out enemies with new ones when you load into a scene. Can be toggled at any point.
                 </p>
-            </div>            
-            <img src="assets/enemies.jpg" class="img-fluid border rounded-4 shadow-lg d-block" width="1280" height="360">            
+            </div>
+            <video autoplay muted loop playsinline class="img-fluid border rounded-4 shadow-lg d-block">
+                <source src="assets/video/enemy-rando.mp4" type="video/mp4">
+            </video>
             <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-5 mb-5 py-5">
                 <div class="col">
                     <h2 class="text-white">
@@ -360,7 +369,7 @@
                                 <i class="fas fa-random"></i>
                                 Random Fox Colors
                             </h3>
-                            <p class="lead fs-4" style="text-shadow: 0 3px 10px #111;">
+                            <p class="lead fs-4" style="text-shadow: 0 1px 2px #000;">
                                 Fox colors will randomize everytime you enter a new scene or rest at a shrine.
                             </p>
                         </div>
@@ -369,11 +378,11 @@
                 <div class="col">
                     <div class="border overflow-hidden text-bg-dark rounded-4 shadow-lg h-100" style="background-image: url('assets/keepin-it-real.jpg'); background-size: cover;">
                         <div class="p-5 text-white col-md-10 mx-auto text-center">
-                            <h3 class="pt-3 mb-4 display-6 fw-semibold" style="text-shadow: 0 3px 10px #333;">
+                            <h3 class="pt-3 mb-4 display-6 fw-semibold" style="text-shadow: 0 3px 10px #000;">
                                 <i class="fas fa-glasses"></i>
                                 Keepin' It Real
                             </h3>
-                            <p class="lead fs-4" style="text-shadow: 0 3px 5px #111;">
+                            <p class="lead fs-4" style="text-shadow: 0 1px 3px #111;">
                                 Toggles "Fox Sunglasses" on and off without needing to use the HC code.
                             </p>
                         </div>
@@ -404,7 +413,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <video src="assets/color-editor.mp4" type="video/mp4" preload="auto" autoplay muted loop class="d-block mx-lg-auto img-fluid border rounded-3 shadow-lg"></video>
+                    <video src="assets/video/color-editor.mp4" type="video/mp4" preload="auto" autoplay muted loop class="d-block mx-lg-auto img-fluid border rounded-3 shadow-lg"></video>
                 </div>
             </div>
             
@@ -494,11 +503,11 @@
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 py-5 mb-5 g-5 text-center">
                 <div class="col">
                     <div class="overflow-hidden rounded-4 border shadow h-100">
-                        <img src="assets/hint-swamp.jpg" class="img-fluid border-bottom">
+                        <img src="assets/hint-lantern.jpg" class="img-fluid border-bottom">
                         <div class="p-3">
                             <p>
-                                Someone didn't do a very good job with this fence.
-                            </p>   
+                                Now I can go east AND west.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -514,40 +523,20 @@
                 </div>
                 <div class="col">
                     <div class="overflow-hidden rounded-4 border shadow h-100">
+                        <img src="assets/hint-swamp.jpg" class="img-fluid border-bottom">
+                        <div class="p-3">
+                            <p>
+                                Someone didn't do a very good job with this fence.
+                            </p>   
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="overflow-hidden rounded-4 border shadow h-100">
                         <img src="assets/hint-mask.jpg" class="img-fluid border-bottom">
                         <div class="p-3">
                             <p>
                                 This will never be below the Quarry.
-                            </p>   
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="overflow-hidden rounded-4 border shadow h-100"">
-                        <img src="assets/hint-eastforest.jpg" class="img-fluid border-bottom">
-                        <div class="p-3">
-                            <p>
-                                This can be spawned at any time of day.
-                            </p>   
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="overflow-hidden rounded-4 border shadow h-100">
-                        <img src="assets/hint-secretlegend.jpg" class="img-fluid border-bottom">
-                        <div class="p-3">
-                            <p>
-                                Try opening this from the outside.
-                            </p>   
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="overflow-hidden rounded-4 border shadow h-100">
-                        <img src="assets/hint-time.jpg" class="img-fluid border-bottom">
-                        <div class="p-3">
-                            <p>
-                                Don't worry about sunset too much.
                             </p>   
                         </div>
                     </div>
@@ -564,6 +553,16 @@
                 </div>
                 <div class="col">
                     <div class="overflow-hidden rounded-4 border shadow h-100">
+                        <img src="assets/hint-secretlegend.jpg" class="img-fluid border-bottom">
+                        <div class="p-3">
+                            <p>
+                                Try opening this from the outside.
+                            </p>   
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="overflow-hidden rounded-4 border shadow h-100">
                         <img src="assets/hint-cathedral.jpg" class="img-fluid border-bottom">
                         <div class="p-3">
                             <p>
@@ -573,21 +572,31 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="overflow-hidden rounded-4 border shadow h-100">
-                        <img src="assets/hint-lantern.jpg" class="img-fluid border-bottom">
+                    <div class="overflow-hidden rounded-4 border shadow h-100"">
+                        <img src="assets/hint-eastforest.jpg" class="img-fluid border-bottom">
                         <div class="p-3">
                             <p>
-                                Now I can go east AND west.
-                            </p>
+                                This can be spawned at any time of day.
+                            </p>   
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="overflow-hidden rounded-4 border shadow h-100">
+                        <img src="assets/hint-time.jpg" class="img-fluid border-bottom">
+                        <div class="p-3">
+                            <p>
+                                Don't worry about sunset too much.
+                            </p>   
                         </div>
                     </div>
                 </div>
             </div>
-
+            
             <!-- ------------- -->
             <!-- Setup Section -->
             <!-- ------------- -->
-
+            
             <div class="text-center col-sm-7 mx-auto">
                 <h1 class="text-center text-white display-3" id="setup">
                     Setup
@@ -647,11 +656,11 @@
                     </div>
                 </div>
             </div>
-
+            
             <!-- ---------------- -->
             <!-- Trackers Section -->
             <!-- ---------------- -->
-
+            
             <div class="text-center col-sm-7 mx-auto">
                 <h1 class="text-center text-white display-3" id="trackers">
                     Trackers
@@ -703,11 +712,11 @@
                     </div>
                 </div>
             </div>
-
+            
             <!-- ------------- -->
             <!-- Links Section -->
             <!-- ------------- -->
-
+            
             <div class="text-center col-sm-7 mx-auto">
                 <h1 class="text-center text-white display-3" id="links">
                     Community Links
@@ -764,12 +773,12 @@
         </div>    
     </section>
     
-    <section class="footer-pic d-print-none pt-5 pb-4"></section>
+    <section class="footer-pic d-print-none"></section>
     
-    <footer class="site-footer d-print-none pt-4 pb-3">
+    <footer class="site-footer d-print-none pt-4 pb-3 bg-dark-subtle">
         <div class="container">
             <p>
-                Randomizer by <a href="https://twitch.tv/SilentDestroyerSR" class="link-light">SilentDestroyer</a>
+                Randomizer by <a href="https://twitch.tv/silentdestroyersr" class="link-light">SilentDestroyer</a>
                 &bull; Site by <a href="https://twitch.tv/radicoon" class="link-light">Radicoon</a>
                 &bull; Built Using <a href="https://getbootstrap.com/docs/5.3/" class="link-light">Bootstrap</a>
                 and <a href="https://fontawesome.com/" class="link-light">Font Awesome</a> <small><i class="fas fa-heart"></i></small>

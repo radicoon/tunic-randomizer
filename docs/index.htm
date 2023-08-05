@@ -24,7 +24,7 @@
                 e.preventDefault();
             });
             
-            const videoCount = 1;
+            const videoCount = 9;
             var randomVideo = Math.floor(Math.random() * videoCount) + 1;
             $("#hero-video").attr("src", `assets/video/hero-${randomVideo}.mp4`);
         });
@@ -80,33 +80,33 @@
         </div>
     </header>
     
-    <section class="overflow-hidden">
-        <video autoplay muted loop playsinline id="hero-video" class="position-absolute" src="#" type="video/mp4"></video>
-        <div class="px-4 pt-5 text-center border-bottom">
+    <section class="overflow-hidden scanlines" style="min-height: 75vh; max-height: 100vh;">
+        <video autoplay muted loop playsinline id="hero-video" class="position-absolute bg-tertiary-subtle" src="#" type="video/mp4"></video>
+        <div class="px-4 pt-5 text-center">
             <div class="my-2 text-center">
-                <img class="d-block mx-auto mb-4" src="assets/tunc.png" alt="" width="150" height="150">
+                <img class="d-block mx-auto mb-4" src="assets/tunc.png" alt="tunic fox" width="150" height="150">
             </div>
-            <h1 class="display-4 fw-bold text-white text-shadow-lg">
+            <h1 class="display-4 fw-bold text-white text-shadow-lg scanlines-text-strong">
                 TUNIC Randomizer
             </h1>
-            <div class="col-lg-6 mx-auto">
-                <p class="lead mb-4 text-white text-shadow-lg">
+            <div class="col-lg-5 mx-auto">
+                <p class="lead mb-4 text-white text-shadow scanlines-text">
                     An extensive mod for TUNIC, an action-adventure game about a tiny fox in a big world. Featuring randomization of every item, enemy randomization, enhanced fox customization, custom items, and much, much more!
                 </p>
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-                    <a href="https://tunicgame.com/" class="btn btn-primary btn-lg px-4 me-sm-3">Get TUNIC</a>
-                    <a href="https://github.com/silent-destroyer/tunic-randomizer#installation" class="btn btn-success btn-lg px-4">Download Randomizer</a>
+                    <a href="https://tunicgame.com/" class="btn btn-primary btn-lg px-4 me-sm-3 scanlines-box">Get TUNIC</a>
+                    <a href="https://github.com/silent-destroyer/tunic-randomizer#installation" class="btn btn-success btn-lg px-4 scanlines-box">Download Randomizer</a>
                 </div>
             </div>
-            <div class="overflow-hidden" style="max-height: 35vh;">
+            <div class="overflow-hidden d-none d-sm-block" style="max-height: 35vh;">
                 <div class="container px-5">
-                    <img src="assets/hero-screenshot.jpg" class="img-fluid border border-5 rounded-3 shadow-lg mb-4" alt="Example image" loading="lazy" width="800">
+                    <img src="assets/hero-screenshot.jpg" class="img-fluid rounded-3 border border-5 mb-4 shadow" alt="screenshot" width="800">
                 </div>
             </div>
         </div>
     </section>
     
-    <section class="py-3 bg-dark">
+    <section class="py-3 bg-dark border-top">
         <div class="container overflow-hidden py-3 py-sm-4">
             <!-- ------------- -->
             <!-- Modes Section -->

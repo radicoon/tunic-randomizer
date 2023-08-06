@@ -45,3 +45,11 @@ h1 {
 .scanlines-box{
     box-shadow: 1.25px 0 1px rgba(0,30,255,0.5), -1.25px 0 1px rgba(255,0,80,0.3), 0 0 3px;
 }
+
+.scanlines-box-strong{
+    box-shadow: 2.5px 0 1px rgba(0,30,255,0.5), -2.5px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+}
+
+.scanlines-image{
+    filter: drop-shadow(3.4px 0 1px rgba(0,30,255,0.5)) drop-shadow(-3.4px 0 1px rgba(255,0,80,0.3));
+}

@@ -24,9 +24,9 @@
                 e.preventDefault();
             });
             
-            const videoCount = 9;
+            const videoCount = 19;
             var randomVideo = Math.floor(Math.random() * videoCount) + 1;
-            $("#hero-video").attr("src", `assets/video/hero-${randomVideo}.mp4`);
+            $("#hero-video").attr("src", `assets/video/hero/hero-${randomVideo}.mp4`);
         });
     </script>
 </head>
@@ -80,27 +80,22 @@
         </div>
     </header>
     
-    <section class="overflow-hidden scanlines" style="min-height: 75vh; max-height: 100vh;">
+    <section class="overflow-hidden scanlines d-flex align-items-center" style="min-height: 80vh; max-height: 100vh;">
         <video autoplay muted loop playsinline id="hero-video" class="position-absolute bg-tertiary-subtle" src="#" type="video/mp4"></video>
-        <div class="px-4 pt-5 text-center">
-            <div class="my-2 text-center">
-                <img class="d-block mx-auto mb-4" src="assets/tunc.png" alt="tunic fox" width="150" height="150">
+        <div class="px-4 text-center">
+            <div class="mb-3">
+                <img class="d-block mx-auto mb-3 scanlines-image" src="assets/tunc.png" alt="tunic fox" height="200">
             </div>
-            <h1 class="display-4 fw-bold text-white text-shadow-lg scanlines-text-strong">
+            <h1 class="display-4 fw-bold text-white scanlines-text-strong">
                 TUNIC Randomizer
             </h1>
-            <div class="col-lg-5 mx-auto">
-                <p class="lead mb-4 text-white text-shadow scanlines-text">
-                    An extensive mod for TUNIC, an action-adventure game about a tiny fox in a big world. Featuring randomization of every item, enemy randomization, enhanced fox customization, custom items, and much, much more!
+            <div class="col-md-10 col-lg-8 col-xl-7 col-xxl-5 mx-auto">
+                <p class="lead mb-4 fs-4 text-white text-shadow scanlines-text">
+                    An extensive mod for TUNIC, an action-adventure game about a tiny fox in a big world. Featuring randomization of every item and enemy, hints, enhanced fox customization, custom items, and much, much more!
                 </p>
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-                    <a href="https://tunicgame.com/" class="btn btn-primary btn-lg px-4 me-sm-3 scanlines-box">Get TUNIC</a>
-                    <a href="https://github.com/silent-destroyer/tunic-randomizer#installation" class="btn btn-success btn-lg px-4 scanlines-box">Download Randomizer</a>
-                </div>
-            </div>
-            <div class="overflow-hidden d-none d-sm-block" style="max-height: 35vh;">
-                <div class="container px-5">
-                    <img src="assets/hero-screenshot.jpg" class="img-fluid rounded-3 border border-5 mb-4 shadow" alt="screenshot" width="800">
+                    <a href="https://tunicgame.com/" class="btn btn-primary btn-lg px-4 me-sm-3 scanlines-box-strong">Get TUNIC</a>
+                    <a href="https://github.com/silent-destroyer/tunic-randomizer#installation" class="btn btn-success btn-lg px-4 scanlines-box-strong">Download Randomizer</a>
                 </div>
             </div>
         </div>
@@ -715,7 +710,7 @@
                 </h1>
                 <hr>
                 <p>
-                    Optional settings that add hints for progress to the game.
+                    Other ways to connect with the TUNIC enthusiast community.
                 </p>
             </div>
             <div class="row row-cols-1 row-cols-lg-3 pt-4 pt-sm-5 pb-5 mb-3 mb-sm-4 mb-lg-5 g-4 g-sm-5">
